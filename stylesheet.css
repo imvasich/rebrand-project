@@ -15,7 +15,93 @@ Color 6 is a light gray. Color 6 is used for the hover color of button 2.*/
 background-color: var(--brand-color1);
 }
 
+/*Headers and Subheaders*/
+h1 {
+  color: var(--brand-color4);
+  font-family: header;
+}
+
+h2 {
+  color: var(--brand-color2);
+  font-family: heeader;
+}
+
+h3 {
+  color: var(--brand-color3);
+  font-family: header;
+}
+
+/*Body Text*/
 p {
   color: var(--brand-color4);
+  font-family: body;
+  text-align: left;
+}
+
+/*Links*/
+a {
+  color: var(--brand-color2);
+  font-family: header;
+}
+
+a:hover {
+  color: var(--brand-color3);
+  transition-duration:0.4s;
+}
+
+/*Buttons*/
+.button1 {
+  background-color: var(--brand-color4);
+  font-family:header;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 30px;
+  height: 15px;
+}
+
+.button1:hover {
+  background-color:var(--brand-color6);
+  transition-duration: 0.4s;
+}
+
+.button2 {
+  background-color: var(--brand-color2);
+  font-family:header;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 15px;
+  width: 30px;
+  height: 15px;
+}
+
+.button2:hover {
+  background-color:var(--brand-color5);
+  transition-duration: 0.4s;
+}
+
+/*Table*/
+#links th {
   
+}
+
+/*Fonts*/
+@font-face {
+  font-family:header;
+  src:url(Raleway-Black.ttf);
+}
+
+@font-face {
+  font-family:body;
+  src:url(OpenSans-Medium);
+}
+
+/*Devices wider than phones*/
+@media only screen and (min-width: 481px) {
+
+    body {
+        margin: 40px;
+    }
+
+
 }
