@@ -11,7 +11,6 @@ Color 3 is a hot pink. Color 3 is used in header 3, link hover, and  social medi
 Color 4 is white. Color 4 is used for header 1, button 1 text, button 2 background, and body text.
 Color 5 is a darker version of Color 2. Color 5 is used for the hover color of button 1.
 Color 6 is a light gray. Color 6 is used for the hover color of button 2.*/
-
 background-color: var(--brand-color1);
 }
 
@@ -19,25 +18,25 @@ background-color: var(--brand-color1);
 h1 {
   color: var(--brand-color4);
   text-align: center;
-  font-family: header;
+  font-family:header;
 }
 
 h2 {
   color: var(--brand-color2);
   text-align: center;
-  font-family: heeader;
+  font-family:header;
 }
 
 h3 {
   color: var(--brand-color3);
   text-align: left;
-  font-family: header;
+  font-family:header;
 }
 
 /*Body Text*/
 p {
   color: var(--brand-color4);
-  font-family: body;
+  font-family:body;
   text-align: left;
 }
 
@@ -90,6 +89,7 @@ a:hover {
 ul {
   margin: 0;
   padding: 0;
+  margin-top: 15px;
   list-style-type: none;
 }
 
@@ -100,19 +100,47 @@ li {
 }
 
 /*Div Boxes*/
-.columns {
+div.column {
   column-count: 2;
-  column-gap: 20px;
-  column-width: 50%;
-  font-family: inherit;
-
-.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+  column-gap: 30px;
+  column-width: 100%;
+  margin-top: 15px;
 }
 
+div.buttonrow {
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+div.imagebutton {
+  position: relative;
+  width: 50%;
+}
+
+div.imagebutton img {
+  width: 100%;
+  height: auto;
+}
+
+div.imagebutton button.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: var(--brand-color4);
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-family:header;
+  cursor: pointer;
+  display: inline-block;
+}
+
+div.imagebutton:hover button.btn:hover {
+  color: var(--brand-color6);
 }
 
 /*Fonts*/
@@ -123,7 +151,7 @@ li {
 
 @font-face {
   font-family:body;
-  src:url(OpenSans-Medium);
+  src:url(OpenSans-Medium.ttf);
 }
 
 /*Devices wider than phones*/
