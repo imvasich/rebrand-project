@@ -1,0 +1,21 @@
+body {
+   --brand-color1: #202226;
+   --brand-color2: #85DBD7;
+   --brand-color3: #FF5EA3;
+   --brand-color4: #FFFFFF;
+   --brand-color5: #5BBAB8;
+   --brand-color6: #d9d9d9;
+/*Color 1 is a dark blue-gray. Color 1 is used in background and button 2 text.
+Color 2 is a light teal. Color 2 is used in header 2, links, and button 1 background.
+Color 3 is a hot pink. Color 3 is used in header 3, link hover, and  social media buttons
+Color 4 is white. Color 4 is used for header 1, button 1 text, button 2 background, and body text.
+Color 5 is a darker version of Color 2. Color 5 is used for the hover color of button 1.
+Color 6 is a light gray. Color 6 is used for the hover color of button 2.*/
+
+background-color: var(--brand-color1);
+}
+
+p {
+  color: var(--brand-color4);
+  
+}
