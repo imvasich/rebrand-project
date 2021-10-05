@@ -18,16 +18,19 @@ background-color: var(--brand-color1);
 /*Headers and Subheaders*/
 h1 {
   color: var(--brand-color4);
+  text-align: center;
   font-family: header;
 }
 
 h2 {
   color: var(--brand-color2);
+  text-align: center;
   font-family: heeader;
 }
 
 h3 {
   color: var(--brand-color3);
+  text-align: left;
   font-family: header;
 }
 
@@ -42,10 +45,12 @@ p {
 a {
   color: var(--brand-color2);
   font-family: header;
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--brand-color3);
+  text-decoration: underline;
   transition-duration:0.4s;
 }
 
@@ -80,18 +85,34 @@ a:hover {
   transition-duration: 0.4s;
 }
 
-/*Table*/
+/*Nav Bar*/
 
-table {
-  padding: 40px;
-  text-align: left;
-  border: 20px;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-tr {
-  padding: 40px;
-  text-align: left;
-  border: 15px;
+li {
+  display: inline;
+  padding: 14px 16px;
+  padding-left: 0px;
+}
+
+/*Div Boxes*/
+.columns {
+  column-count: 2;
+  column-gap: 20px;
+  column-width: 50%;
+  font-family: inherit;
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
 }
 
 /*Fonts*/
