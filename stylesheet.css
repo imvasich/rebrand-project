@@ -81,8 +81,17 @@ a:hover {
 }
 
 /*Table*/
-#links th {
-  padding: 15px;
+
+table {
+  padding: 40px;
+  text-align: left;
+  border: 20px;
+}
+
+tr {
+  padding: 40px;
+  text-align: left;
+  border: 15px;
 }
 
 /*Fonts*/
