@@ -164,7 +164,7 @@ img {
 
 /*Image Buttons*/
 div.imagebuttons {
-  display: block;
+  display: inline-block;
   align-items: center;
   margin: 5px;
 }
