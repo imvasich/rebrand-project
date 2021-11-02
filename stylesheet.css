@@ -314,7 +314,7 @@ div.imagebutton-style .btn {
 
     footer {
       display: flex;
-      margin-bottom: 20px;
+      padding-bottom: 40px;
     }
 
     nav#sides {
