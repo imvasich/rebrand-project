@@ -1,4 +1,4 @@
-body {
+body, html {
    --brand-color1: #202226;
    --brand-color2: #85DBD7;
    --brand-color3: #FF5EA3;
@@ -12,6 +12,7 @@ Color 4 is white. Color 4 is used for header 1, button 1 text, button 2 backgrou
 Color 5 is a darker version of Color 2. Color 5 is used for the hover color of button 1.
 Color 6 is a light gray. Color 6 is used for the hover color of button 2.*/
 background-color: var(--brand-color1);
+height: 100%;
 }
 
 /*Headers and Subheaders*/
@@ -49,7 +50,6 @@ a {
 
 a:hover {
   color: var(--brand-color3);
-  text-decoration: underline;
   transition-duration:0.4s;
 }
 
@@ -89,62 +89,157 @@ a:hover {
 ul {
   margin: 0;
   padding: 0;
-  margin-top: 15px;
   list-style-type: none;
 }
 
 li {
   display: inline;
-  padding: 14px 16px;
   padding-left: 0px;
 }
 
-/*Footer*/
-ul.footer
+img {
+  margin-bottom: 10px;
+}
 
-/*Div Boxes*/
-div.column {
-  column-count: 2;
-  column-gap: 30px;
-  column-width: 100%;
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/dreambanner.png");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*Header*/
+nav#ordering {
+  text-align: left;
+}
+
+nav#ordering a {
+  display: block;
+}
+
+nav#ordering ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+nav#ordering li {
+  margin-right: 20px;
+}
+
+header { /* Sets the navigation to fixed position */
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
   margin-top: 15px;
 }
 
-div.buttonrow {
-  padding: 10px 24px; /* Some padding */
-  cursor: pointer; /* Pointer/hand icon */
-  float: left; /* Float the buttons side by side */
+/*Main*/
+.container {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 20px;
 }
 
-div.imagebutton {
+aside {
+  margin: 10px;
+  width: 50%;
+  margin-right: 20px;
+}
+
+main {
+  width: 50%;
+  margin-left: 20px;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+nav#sides {
+  text-align: left;
+}
+
+nav#sides a {
+  display: block;
+  flex-direction: column;
+}
+
+nav#sides ul {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/*Buttons*/
+div.button {
+  display: block;
+  align-items: center;
+  margin: 5px;
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+div.button-style {
   position: relative;
   width: 50%;
+  margin: 5px;
 }
 
-div.imagebutton img {
+/* Make the image responsive */
+div.button-style img {
   width: 100%;
   height: auto;
+
 }
 
-div.imagebutton button.btn {
+div.button-style h1 {
+  font-size: 24px;
+}
+
+div.button-style h1:hover {
+  color: lightgray;
+}
+
+/* Style the button and place it in the middle of the container/image */
+div.button-style .btn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: var(--brand-color4);
+  padding: 12px 24px;
   border: none;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
-  font-family:header;
   cursor: pointer;
+  border-radius: 5px;
+  background-color: inherit;
   display: inline-block;
 }
 
-div.imagebutton:hover button.btn:hover {
-  color: var(--brand-color6);
-}
+
 
 /*Fonts*/
 @font-face {
@@ -161,8 +256,18 @@ div.imagebutton:hover button.btn:hover {
 @media only screen and (min-width: 481px) {
 
     body {
-        margin: 40px;
+        margin: 20px;
     }
 
+    header {
+      overflow: hidden;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%;
+      margin-top: 15px;/* Full width */
+    }
 
+    .hero-image {
+      margin-top: 100px;
+    }
 }
