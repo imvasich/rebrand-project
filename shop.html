@@ -8,19 +8,34 @@
     <title>DREAM Clothing: Store</title>
   </head>
   <body>
-
-    <header>
-      <nav id="ordering">
-        <img src="images/dreamlogo.png" alt="DREAM Clothing Logo" width="200px">
-        <ul id="links">
+    <nav class="top-nav" id="top-nav">
+    		<a href="#" class="logo"><img src="images/dreamlogo.png" alt="DREAM Clothing Logo" width="200px"></a>
+    		<input class="menu-btn" type="checkbox" id="menu-btn" />
+    		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    		<ul class="menu" id="links">
           <li> <a href="index.html">WHAT IS DREAM CLOTHING?</a> </li>
           <li> <a href="shop.html">SHOP ALL</a> </li>
           <li> <a href="">COLLECTIONS</a> </li>
           <li> <a href="">COLLABORATIONS</a> </li>
           <li> <a href="">ACCESSORIES</a> </li>
-        </ul>
-      </nav>
-    </header>
+    		</ul>
+    	</nav>
+
+    <script>
+      let lastScrollpos = window.pageYOffset;
+      let menuButtonCheck = document.querySelector(".menu-btn");
+      window.onscroll = function() {
+	     let currentScrollPos = window.pageYOffset;
+	     if (lastScrollpos > currentScrollPos) {
+		        document.getElementById("top-nav").style.top = "0";
+	      }
+        else {
+		        document.getElementById("top-nav").style.top = "-75px";
+	      }
+	     lastScrollpos = currentScrollPos;
+	     menuButtonCheck.checked = false;
+      }
+    </script>
 
     <!---Hero Image--->
     <div class="hero-image-shop">
@@ -32,6 +47,53 @@
       </div>
     </div>
 
+    <!--- Gallery --->
+
+    <main>
+      <h1>JUST RELEASED</h1>
+      <div class="images">
+        <figure>
+          <img src="images/hoodie1.png" alt="Purple Colorblock Hoodie">
+          <figcaption>
+            <a href="#">
+              DREAM "Bad For My Mental Health"<br>
+              Color Block Hoodie (Purple/White)<br>
+              $50.00
+            </a>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/hoodie2.png" alt="Blue Colorblock Hoodie">
+          <figcaption>
+            <a href="#">
+              DREAM "Bad For My Mental Health"<br>
+              Color Block Hoodie (Navy/Cream)<br>
+              $79.00
+            </a>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/hoodie3.png" alt="Light blue Hoodie">
+          <figcaption>
+            <a href="#">
+              DREAM "Bad For My Mental Health<br>
+              (Kanji Edition)" Hoodie (Light Blue)<br>
+              $79.00
+            </a>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/hoodie5.png" alt="Purple Yellow and Black Colorblock Hoodie">
+          <figcaption>
+            <a href="#">
+              DREAM "Bad For My Mental Health<br>
+              (Kanji Edition)" Hoodie (Cream)<br>
+              $79.00
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+</main>
 
     <!--- Footer --->
         <footer>
@@ -56,6 +118,6 @@
             </ul>
           </nav>
         </footer>
-        
+
   </body>
 </html>
