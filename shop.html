@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav class="top-nav" id="top-nav">
-    		<a href="#" class="logo"><img src="images/dreamlogo.png" alt="DREAM Clothing Logo" width="200px"></a>
+    		<a href="#" class="logo"><img src="images/dreamlogo2.png" alt="DREAM Clothing Logo" width="200px"></a>
     		<input class="menu-btn" type="checkbox" id="menu-btn" />
     		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     		<ul class="menu" id="links">
@@ -20,22 +20,6 @@
           <li> <a href="">ACCESSORIES</a> </li>
     		</ul>
     	</nav>
-
-    <script>
-      let lastScrollpos = window.pageYOffset;
-      let menuButtonCheck = document.querySelector(".menu-btn");
-      window.onscroll = function() {
-	     let currentScrollPos = window.pageYOffset;
-	     if (lastScrollpos > currentScrollPos) {
-		        document.getElementById("top-nav").style.top = "0";
-	      }
-        else {
-		        document.getElementById("top-nav").style.top = "-75px";
-	      }
-	     lastScrollpos = currentScrollPos;
-	     menuButtonCheck.checked = false;
-      }
-    </script>
 
     <!---Hero Image--->
     <div class="hero-image-shop">
