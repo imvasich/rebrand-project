@@ -86,13 +86,21 @@ img {
 /*Buttons*/
 .button1 {
   background-color: var(--brand-color4);
-  font-family:header;
+  font-family: header;
   text-align: center;
-  font-size: 15px;
+  font-size: 25px;
   border-radius: 15px;
-  width: 100px;
-  height: 20px;
+  width: 150px;
+  height: 30px;
   padding: 14px 16px;
+}
+
+.button1 a {
+  color: var(--brand-color5);
+}
+
+.button1 a:hover {
+  color: var(--brand-color3);
 }
 
 .button1:hover {
@@ -101,18 +109,30 @@ img {
 }
 
 .button2 {
-  background-color: var(--brand-color2);
+  background-color: var(--brand-color5);
   font-family:header;
   text-align: center;
-  font-size: 15px;
-  width: 100px;
-  height: 20px;
+  font-size: 25px;
+  border-radius: 15px;
+  width: 150px;
+  height: 30px;
   padding: 14px 16px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 .button2:hover {
   background-color:var(--brand-color5);
   transition-duration: 0.4s;
+}
+
+.button2 a {
+  color: var(--brand-color4);
+}
+
+.button2 a:hover {
+  color: var(--brand-color6);
 }
 /* End of Universal Content Styling*/
 
@@ -291,6 +311,13 @@ img {
 main {
   width: 100%
 }
+
+main p {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
 
 .images {
   display: grid;
