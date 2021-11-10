@@ -11,33 +11,18 @@
 
     <!--- Header --->
     <<nav class="top-nav" id="top-nav">
-    		<a href="#" class="logo"><img src="images/dreamlogo.png" alt="DREAM Clothing Logo" width="200px"></a>
+    		<a href="#" class="logo"><img src="images/dreamlogo2.png" alt="DREAM Clothing Logo" width="200px"></a>
     		<input class="menu-btn" type="checkbox" id="menu-btn" />
     		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     		<ul class="menu" id="links">
           <li> <a href="index.html">WHAT IS DREAM CLOTHING?</a> </li>
           <li> <a href="shop.html">SHOP ALL</a> </li>
-          <li> <a href="">COLLECTIONS</a> </li>
-          <li> <a href="">COLLABORATIONS</a> </li>
-          <li> <a href="">ACCESSORIES</a> </li>
+          <li> <a href="#">COLLECTIONS</a> </li>
+          <li> <a href="#">COLLABORATIONS</a> </li>
+          <li> <a href="#">ACCESSORIES</a> </li>
     		</ul>
     	</nav>
 
-    <script>
-      let lastScrollpos = window.pageYOffset;
-      let menuButtonCheck = document.querySelector(".menu-btn");
-      window.onscroll = function() {
-	     let currentScrollPos = window.pageYOffset;
-	     if (lastScrollpos > currentScrollPos) {
-		        document.getElementById("top-nav").style.top = "0";
-	      }
-        else {
-		        document.getElementById("top-nav").style.top = "-75px";
-	      }
-	     lastScrollpos = currentScrollPos;
-	     menuButtonCheck.checked = false;
-      }
-    </script>
 
     <!---Hero Image--->
     <div class="hero-image">
@@ -63,23 +48,11 @@ We DREAM in all colors, all shapes, and all sizes and we’ve created collection
       </div>
     </div>
 
-    <!---Image Buttons--->
-    <div class="imagebuttons">
-      <div class="imagebutton-style">
-        <img src="images/collaberations.png" alt="#">
-        <button class="btn"><a href=""><h1>COLLABORATIONS</h1></a></button>
-      </div>
-
-      <div class="imagebutton-style">
-        <img src="images/donations.png" alt="#">
-        <button class="btn"><a href=""><h1>DONATION TRACKER</h1></a></button>
-      </div>
-
-      <div class="imagebutton-style">
-        <img src="images/collections.png" alt="#">
-        <button class="btn"><a href=""><h1>COLLECTIONS</h1></a></button>
-      </div>
-
+    <!---Image Grid --->
+    <div class="grid">
+      <a href="#"><img src="images/collaborations.png"></a>
+      <a href="#"><img src="images/donations.png"></a>
+      <a href="#"><img src="images/collections.png"></a>
     </div>
 
 <!--- Footer --->
