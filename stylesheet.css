@@ -304,6 +304,14 @@ img {
 
 .grid img {
   width: 100%;
+  opacity: 50%;
+}
+
+.grid img:hover {
+  transition-duration: 0.5s;
+  opacity: 100%;
+  transform: scale(0.9);
+  transition-duration: 0.5s;
 }
 /*End of Image Grid*/
 
@@ -326,6 +334,11 @@ main p {
 
 .images img {
   width: 100%;
+}
+
+.images img:hover {
+  transform: scale(0.9);
+  transition-duration: 0.5s;
 }
 /*End of Store Listings*/
 
