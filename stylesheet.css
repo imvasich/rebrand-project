@@ -134,6 +134,29 @@ img {
 .button2 a:hover {
   color: var(--brand-color6);
 }
+
+.fa {
+  padding: 5px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  color: var(--brand-color2);
+}
+
+.fa-twitter {
+  color: var(--brand-color2);
+
+}
+
+.fa-instagram {
+  color: var(--brand-color2);
+
+}
 /* End of Universal Content Styling*/
 
 /*For Phone Displays*/
@@ -520,6 +543,12 @@ nav#sides ul {
       margin-left: 20px;
     }
 
+    .icons {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-left: 20px;
+    }
 
 
 }
